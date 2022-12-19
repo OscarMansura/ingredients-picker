@@ -1,0 +1,27 @@
+.picker {
+    max-width: 980px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+.picker__intro {
+    max-width: 66%;
+}
+.picker__headline {
+    color: var(--color-text);
+    margin-bottom: 0;
+}
+.picker__ingredients {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.picker__total {
+    text-align: right;
+}
+.picker__price {
+    font-weight: 700;
+}

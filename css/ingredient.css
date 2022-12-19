@@ -1,0 +1,60 @@
+.ingredient {
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--color-white);
+    padding: 1px;
+    border: 1px solid var(--border);
+    border-radius: 3px;
+    position: relative;
+}
+.ingredient__column {
+    display: flex;
+}
+.ingredient__column:first-child {
+    align-items: center;
+}
+.ingredient__image {
+
+}
+.ingredient__counter {
+    background-color: var(--color-primary);
+    color: var(--color-white); 
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 80%;
+    transform: translate(-10px, -10px);
+}
+.ingredient__name {
+    font-size: 93%;
+    color: var(--color-text--500);
+    transform: translateX(-10px);
+}
+.ingredient__control {
+    background: var(--color-text--400);
+    color: var(--color-white);
+    border: none;
+    margin-left: 1px;
+    width: 34px;
+    cursor: pointer;
+}
+.ingredient__control--remove {
+
+}
+.ingredient__control--add {
+
+}
+.ingredient[data-amount="0"] .ingredient__counter {
+    opacity: 0;
+}
+.ingredient[data-amount="0"] .ingredient__control--remove {
+    visibility: hidden;
+}
+.ingredient[data-amount="0"] .ingredient__control--add {
+    background: transparent;
+    color: var(--color-text--300);
+}
+

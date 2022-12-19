@@ -1,0 +1,78 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8">
+  <title>Telepizza</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta property="og:title" content="">
+  <meta property="og:type" content="">
+  <meta property="og:url" content="">
+  <meta property="og:image" content="">
+
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="apple-touch-icon" href="icon.png">
+  <!-- Place favicon.ico in the root directory -->
+
+  <link rel="stylesheet" href="icofont/icofont.min.css">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/picker.css">
+  <link rel="stylesheet" href="css/ingredient.css">
+
+  <meta name="theme-color" content="#fafafa">
+</head>
+
+<body>
+
+
+  <!-- Add your site or application content here -->
+
+  <main class="picker">
+
+    <div class="picker__intro">
+      <h2 class="picker__headline">Seleciona ingredientes:</h2>
+      <p>O número associado ao ingrediente refere-se a porções, não unidades. Os molhos (excepto tomate e oregãos) são
+        cobrados como ingrediente extra.</p>
+    </div>
+
+    <ul class="picker__ingredients">
+      <!-- repeat for each ingredient -->
+      <!-- <li class="ingredient" data-amount="0" data-price="">
+        <div class="ingredient__column">
+          <img class="ingredient__image" src="https://images.telepizza.com/vol/pt/images/content/ingredientes/an.png" alt="">
+          <span class="ingredient__counter">x3</span>
+          <span class="ingredient__name">Ananás</span>
+        </div>
+        <div class="ingredient__column">
+          <button class="ingredient__control ingredient__control--remove">
+            <i class="icofont-minus"></i>
+          </button>
+          <button class="ingredient__control ingredient__control--add">
+            <i class="icofont-plus"></i>
+          </button>
+        </div>
+      </li>
+      -->
+    </ul>
+    <p class="picker__total">Total: <span class="picker__price">10€</span></p>
+  </main>
+
+
+
+
+  <script src="js/vendor/modernizr-3.11.2.min.js"></script>
+  <script src="js/plugins.js"></script>
+  <script src="js/main.js"></script>
+
+  <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+  <script>
+    window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
+    ga('create', 'UA-XXXXX-Y', 'auto'); ga('set', 'anonymizeIp', true); ga('set', 'transport', 'beacon'); ga('send', 'pageview')
+  </script>
+  <script src="https://www.google-analytics.com/analytics.js" async></script>
+</body>
+
+</html>
